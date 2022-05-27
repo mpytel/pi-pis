@@ -1,0 +1,16 @@
+{
+  "name": "pi-pis",
+  "version": "1.0.0",
+  "description": "pi-pis collects and indexes pi useing a set piID.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test set up yet\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mpytel/pi-pis.git"
+  },
+  "keywords": [],
+  "author": "Martin <martin@pidev.com>",
+  "license": "piDev"
+}

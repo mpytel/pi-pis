@@ -1,0 +1,52 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+build/
+# Dependency directories
+node_modules/
+jspm_packages/
+# pidev scratch dirctories
+hold/
+scratch/
+picatJN/
+pidev/
+# Optional npm cache directory
+.npm
+# Optional eslint cache
+.eslintcache
+# dotenv environment variables file
+.env
+.env.test
+# git directory
+.git
+
+package-lock.json
+
+# Mac Finder files
+.DS_Store
+src/.DS_Store
+src/connections/.DS_Store
+src/controllers/.DS_Store
+src/models/.DS_Store
+src/routes/.DS_Store
+src/styles/.DS_Store
+src/views/.DS_Store
+
+*.pem
+public/images/interest.png
+src/words/words_dictionary.json
+src/words/words.json
+src/bootstrap/cmdLog.sh
+src/bootstrap/cmdLogH.sh
+
+yarn.lock
+/lib
+/test/coverage
