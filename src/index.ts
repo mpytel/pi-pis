@@ -1,6 +1,8 @@
 import bootPis from "./bootPis/bootPis000";
+import PiBase from "./classes/PiBase";
 import { Pi, Pis, PiUser, PiUsers } from "./classes/Pis";
 export { bootPis };
+export { PiBase };
 export { Pi, Pis, PiUser, PiUsers };
 
 const piUser = new PiUser("piUser", "root");
