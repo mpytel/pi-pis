@@ -1,0 +1,60 @@
+# Root types
+pi pi 'Smallest particle of Pertinent Information.\nTopic oriented writing is used when working with pis.'
+pi piType 'A specialized pi for holding different types of information that a pi can represent.'
+piType piType 'A specialized pi that specifies the type of information stored and behavior the pi exhibit.'
+piType user 'A pi specialized to designate a user of the Pi system.'
+piType realm 'A pi specialized to designate a realm of the Pi system.'
+piType domain 'A pi specialized to designate a domain of the Pi system.'
+piType subject 'A pi specialized to designate a subject of the Pi system.'
+piType type 'Designator of the type of information that a topic represents.'
+piType piMap 'A specialized piType (info-type) used as define the root map object used fot organizing pis'
+piType piIndex 'Indexing pis, 1) user, 2) realm, 3) domain, 4) subject and 5) type used to catalog all pis.'
+# End or Root types
+# Root currPi
+piIndex currPi 'Volatile pi to hold the current subject, domain, realm, user and/or combination, set to simplify association of meta data used when a user is defining the next pi in sequence of pi creations.'
+#/
+# Start of piIndices type definitions. These triger an event to populate their respective piMaps and
+# change the Current Index piIndex item to that spcified when a new user, realm, domain, subjet or type is created.
+piIndex user 'A specialized topic that designates a pi as a member of the user information class.'
+piIndex realm 'A specialized topic that designates a pi as a member of the subject realm class.'
+piIndex domain 'A specialized topic that designates a pi as a member of the domain information class.'
+piIndex subject 'A specialized topic that designates a pi as a member of the subject information class.'
+piIndex type 'Designator of the type of information that a topic represents.'
+# End of the 5 piIndex used by the current Pi system
+# Root pi maps
+# By defalut each of the folowing maps are created with
+# Current Index:  user: piUser,   realm:  piRealm   domain:  piDomain   subject:  piSubject  type:  piType
+piMap piUsers 'A map of the users associated with a given subject, domain, realm or user combination'
+piMap piRealms 'A map of the realms associated with a given subject, domain, realm or user combination'
+piMap piDomains 'A map of the domains associated with a given subject, domain, realm or user combination'
+piMap piSubjects 'A map of the subjects associated with a given subject, domain, realm or user combination'
+piMap piTypes 'A map of the types associated with a given subject, domain, realm or user combination'
+piMap piPis 'A map of the pis associated with a given subject, domain, realm or user combination'
+piMap piMaps 'A map of the piMaps associated with a given subject, domain, realm or user combination'
+# End of piIdxTypes definitions
+# Root types for topic oriented writing.
+piMap map 'The root maps used to organize pis for the Current Index.'
+piType topic 'The pi base class used for topic oriented writing.'
+topic topic 'Specifies the topic pi as a topic for topic oriented writing.'
+topic reference 'Specifies a topic as a reference for topic oriented writing.'
+topic task 'Specifies a topic as a reference for task oriented writing.'
+map words 'A specialized map to organize words for topic oriented writing.'
+words phrase 'A specialized map to organize words tokens and punctuation phrase for topic oriented writing.'
+map paragraph 'A specialized piMap to organize paragraph for topic oriented writing.'
+# Root user
+user piUser 'Root pi user'
+# Root realm
+realm piRealm 'Root pi realm, fundamental to Pi inner workings'
+realm private 'Root realm for pis that are not shared with others.'
+realm secure 'Root realm for pis that can be shared when granted by user'
+realm public 'Root realm for pis shared with piUser/public that al piUsers can use.'
+# Root domain
+domain piDomain 'Root pi domain'
+# Root subject
+subject piSubject 'Root pi subject'
+# TODO OPTIONS --user piUser --realm piRealm --domain pidomain  --subject piSubject
+pi piInfluence 'Volatile pi used to hold the current pi influencing an piInterest' 
+pi piInterest 'Volatile pi being created using the current piInfluence.'
+#/
+# TODO OPTIONS --user piUser --realm piRealm --domain pidomain  --subject piSubject 
+# End Root pis
