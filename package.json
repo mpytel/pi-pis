@@ -1,6 +1,6 @@
 {
   "name": "pi-pis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "pi-pis collect and index pis by pi and piID sets.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

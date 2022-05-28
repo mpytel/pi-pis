@@ -15,15 +15,14 @@ export class PiUsers {
 export class PiUser {
   // global sington holding entry points for piUser pis
   piUser: Pi;
-  pis: Pis
+  pis: Pis;
 
   constructor(piUser: string, piRelm: string) {
     const piPi: IPiBase = new PiBase("piUser", piUser, piRelm);
     const principal = new Pi(piPi);
     const thePis = new Pis();
     this.piUser = principal;
-    this.pis = thePis
-
+    this.pis = thePis;
   }
   set setPis(thePis: Pis) {
     this.pis = thePis;
@@ -38,7 +37,7 @@ export class Pis {
     const piPi: IPiBase = new PiBase("piType-boot", "piTitle-boot", "piSD-boot");
     const principal = new Pi(piPi);
     this.piPrincipal = principal;
-    this.pis = [ principal ];
+    this.pis = [principal];
   }
   length(): number {
     return this.pis.length;

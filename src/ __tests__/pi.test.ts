@@ -3,7 +3,7 @@ import { Pi, PiUsers } from "../classes/Pis";
 import piUsers from "../index";
 
 const Users: PiUsers = piUsers;
-const User = Users.piUsers[0]
+const User = Users.piUsers[0];
 
 test("Boot Users have only one element", () => {
   expect(Users.piUsers.length).toBe(1);
@@ -25,4 +25,3 @@ describe("Pi Class Testing", () => {
     expect(User.pis.length()).toBe(initLenght + 1);
   });
 });
-
